@@ -6,5 +6,11 @@ Desarrollo de un Web Services Restful y dos clientes para el consumo del mismo (
 - El frontend debe estar alojado en una PaaS. (Netlify)
 - La aplicación móvil debe estar instalado en un dispositivo móvil por medio de Google Play Store
 
+### Integrantes  :boy::boy::boy::woman:
+- Jhoel Amagua
+- David Curipoma
+- Cristhian Guamba
+- Wendy Soto
 
 URL API: https://proyectorestful.herokuapp.com/api/restaurante  
+
