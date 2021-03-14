@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/tab1"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Más información</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card *ngFor="let r of restaurante">
+    <img [src]="r.imagen"/>
+    <ion-card-header>
+      <ion-card-subtitle>Detalles del Restaurante</ion-card-subtitle>
+      <ion-card-title class="ion-align-item-center">{{r.nombre}}</ion-card-title>
+      <ion-card-title>Ruc: {{r.Ruc}}</ion-card-title>
+      <ion-card-title>Teléfono: {{r.telefono}}</ion-card-title>
+      <ion-card-title>Dirección: {{r.direccion}}</ion-card-title>
+      <ion-card-title>Nombre administrador: {{r.administrador}}</ion-card-title>
+      <ion-card-title>Email: {{r.correo}}</ion-card-title>
+      <ion-card-title>Horario de atención: {{r.horario}}</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+
+</ion-content>

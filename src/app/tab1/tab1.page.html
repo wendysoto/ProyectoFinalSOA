@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Lista de Restaurantes
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Restaurantes</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      Lista de Restaurantes disponibles
+    </ion-card-content>
+
+  </ion-card>
+
+  <ion-list>
+    <ion-item *ngFor="let res of restaurantes" [routerLink]="['/tabs/tab1/detalle',res.id]" >
+      <ion-thumbnail slot="start">
+        <img [src]="res.imagen"/>
+      </ion-thumbnail>
+      <ion-label>{{res.nombre}}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
